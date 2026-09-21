@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Administration</title>
+
+<style>
+
+body{
+    background:#b30000;
+    color:white;
+    font-family:Arial,sans-serif;
+    text-align:center;
+    padding:50px;
+}
+
+.login{
+    max-width:400px;
+    margin:auto;
+    background:#900000;
+    padding:30px;
+    border-radius:15px;
+}
+
+input{
+    width:90%;
+    padding:12px;
+    margin:10px;
+    border:none;
+    border-radius:8px;
+}
+
+button{
+    padding:12px 25px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+#adminPanel{
+    display:none;
+}
+
+table{
+    width:100%;
+    background:white;
+    color:black;
+    border-collapse:collapse;
+    margin-top:20px;
+}
+
+th,td{
+    border:1px solid #ccc;
+    padding:10px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="login">
+
+<h1>Administration</h1>
+
+<input type="password" id="password" placeholder="Mot de passe">
+
+<button onclick="login()">
+Connexion
+</button>
+
+</div>
+
+<div id="adminPanel">
+
+<h2>Liste des exposants</h2>
+
+<table>
+
+<tr>
+    <th>Nom</th>
+    <th>Prénom</th>
+    <th>Mètres</th>
+</tr>
+
+<tr>
+    <td>DUPONT</td>
+    <td>Jean</td>
+    <td>4</td>
+</tr>
+
+</table>
+
+</div>
+
+<script>
+
+function login(){
+
+    const mdp = document.getElementById("password").value;
+
+    if(mdp === "Gael2027"){
+        document.querySelector(".login").style.display="none";
+        document.getElementById("adminPanel").style.display="block";
+    }
+    else{
+        alert("Mot de passe incorrect");
+    }
+
+}
+
+</script>
+
+</body>
+</html>
