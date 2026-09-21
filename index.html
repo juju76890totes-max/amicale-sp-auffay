@@ -97,17 +97,35 @@ footer{
 <div class="card">
 <h2>🛍️ Foire à Tout</h2>
 <p>Réservation des emplacements prochainement</p>
-   <form id="inscription">
+    <form id="inscriptionForm">
+    <input type="text" id="nom" placeholder="Nom" required>
+    <input type="text" id="prenom" placeholder="Prénom" required>
+        <input type="text" id="mètre souhaité" placeholder="mètre souhaité" required>
+        <input type="text" id="numéro de téléphone" placeholder="Numéro téléphone" required>
+        <input type="text" id="mail" placeholder="Adresse mail" required>
 
-<input type="text" id="nom">
-<input type="text" id="prenom">
-<input type="email" id="mail">
-
-<button>
-Valider
-</button>
-
+    <button type="submit">S'inscrire</button>
 </form>
+   <script>
+document.getElementById("inscriptionForm").addEventListener("submit", function(e){
+
+    e.preventDefault();
+
+    let inscrits = JSON.parse(localStorage.getItem("inscrits")) || [];
+
+    inscrits.push({
+        nom: document.getElementById("nom").value,
+        prenom: document.getElementById("prenom").value
+    });
+
+    localStorage.setItem("inscrits", JSON.stringify(inscrits));
+
+    alert("Inscription enregistrée");
+
+});
+</script>
+
+
 </div>
 
 <div class="card">
