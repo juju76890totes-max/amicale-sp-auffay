@@ -8,218 +8,694 @@
 5
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 6
-<title>Amicale des Sapeurs-Pompiers d'Auffay</title>
+ 
 7
- 
+<title>Amicale des Sapeurs-Pompiers d'Auffay</title>
 8
-<style>
+ 
 9
-body {
+<link relonts.googleapis.com
 10
-font-family: Arial, sans-serif;
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;lay=swap
 11
-margin: 0;
+ 
 12
-background-color: #f5f5f5;
+<style>
 13
-}
+ 
 14
- 
+*{
 15
-header {
+margin:0;
 16
-background-color: #c00000;
+padding:0;
 17
-color: white;
+box-sizing:border-box;
 18
-text-align: center;
+font-family:'Poppins',sans-serif;
 19
-padding: 40px;
+}
 20
-}
+ 
 21
- 
+html{
 22
-nav {
+scroll-behavior:smooth;
 23
-background-color: #222;
+}
 24
-text-align: center;
+ 
 25
-padding: 15px;
+body{
 26
-}
+background:#f5f5f5;
 27
- 
+color:#222;
 28
-nav a {
-29
-color: white;
-30
-text-decoration: none;
-31
-margin: 15px;
-32
 }
-33
+29
  
+30
+header{
+31
+position:fixed;
+32
+width:100%;
+33
+top:0;
 34
-section {
+left:0;
 35
-max-width: 1000px;
+z-index:1000;
 36
-margin: auto;
+background:rgba(0,0,0,0.8);
 37
-padding: 40px;
+backdrop-filter:blur(10px);
 38
 }
 39
  
 40
-.carte {
+nav{
 41
-background: white;
+max-width:1200px;
 42
-padding: 20px;
+margin:auto;
 43
-margin-top: 15px;
+display:flex;
 44
-border-radius: 10px;
+justify-content:space-between;
 45
-box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+align-items:center;
 46
-}
+padding:15px 20px;
 47
- 
+}
 48
-footer {
+ 
 49
-background: #222;
+.logo{
 50
-color: white;
+color:white;
 51
-text-align: center;
+font-size:1.2rem;
 52
-padding: 20px;
+font-weight:700;
 53
 }
 54
-</style>
+ 
 55
-</head>
+.menu a{
 56
- 
+color:white;
 57
-<body>
+text-decoration:none;
 58
- 
+margin-left:20px;
 59
-<header>
+font-weight:500;
 60
-<h1>🚒 Amicale des Sapeurs-Pompiers d'Auffay</h1>
+}
 61
-<p>Bienvenue sur notre site officiel</p>
+ 
 62
-</header>
+.hero{
 63
- 
+height:100vh;
 64
-<nav>
+background:
 65
-#amicaleL'Amicale</a>
+linear-gradient(rgba(0,0,0,0.55),rgba(0,0,0,0.55)),
 66
-<avenementsÉvénements</a>
+url('https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=1800&q=80');
 67
-<a href="#contact">Contact</a>
+background-size:cover;
 68
-ction id="amicale">
+background-position:center;
 69
-<h2>L'Amicale</h2>
+display:flex;
 70
- 
+justify-content:center;
 71
-<div class="carte">
+align-items:center;
 72
-<p>
+text-align:center;
 73
-Présentation de l'amicale des sapeurs-pompiers.
+color:white;
 74
-Ce texte pourra être remplacé par votre historique
+padding:20px;
 75
-et la présentation de votre bureau.
+}
 76
-</p>
+ 
 77
-</div>
+.hero h1{
 78
-</section>
+font-size:4rem;
 79
- 
+margin-bottom:20px;
 80
-<section id="evenements">
+}
 81
-<h2>Nos événements</h2>
+ 
 82
- 
+.hero p{
 83
-<div class="carte">
+font-size:1.3rem;
 84
-<h3>Foire à Tout</h3>
+margin-bottom:30px;
 85
-<p>Informations et inscriptions à venir.</p>
+}
 86
-</div>
+ 
 87
- 
+.btn{
 88
-<div class="carte">
+display:inline-block;
 89
-<h3>Trail des Pompiers</h3>
+background:#d60000;
 90
-<p>Parcours, photos et résultats.</p>
+color:white;
 91
-</div>
+padding:15px 30px;
 92
- 
+border-radius:50px;
 93
-<div class="carte">
+text-decoration:none;
 94
-<h3>Sainte-Barbe</h3>
+font-weight:bold;
 95
-<p>Informations sur la cérémonie.</p>
+transition:0.3s;
 96
-</div>
+}
 97
-</section>
+ 
 98
- 
+.btn:hover{
 99
-<section id="contact">
+background:#ff0000;
 100
-<h2>Contact</h2>
+transform:translateY(-3px);
 101
- 
+}
 102
-<div class="carte">
-103
-<p>Email : contact@amicale.fr</p>
-104
-<p>Facebook : à compléter</p>
-105
-</div>
-106
-</section>
-107
  
+103
+section{
+104
+padding:90px 20px;
+105
+}
+106
+ 
+107
+.container{
 108
-<footer>
+max-width:1200px;
 109
-© 2026 Amicale des Sapeurs-Pompiers d'Auffay
+margin:auto;
 110
-</footer>
+}
 111
  
 112
-</body>
+h2{
 113
+text-align:center;
+114
+font-size:2.5rem;
+115
+margin-bottom:50px;
+116
+}
+117
+ 
+118
+.cards{
+119
+display:grid;
+120
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+121
+gap:25px;
+122
+}
+123
+ 
+124
+.card{
+125
+background:white;
+126
+padding:25px;
+127
+border-radius:20px;
+128
+box-shadow:0 5px 20px rgba(0,0,0,0.1);
+129
+transition:0.3s;
+130
+}
+131
+ 
+132
+.card:hover{
+133
+transform:translateY(-5px);
+134
+}
+135
+ 
+136
+.card h3{
+137
+color:#d60000;
+138
+margin-bottom:10px;
+139
+}
+140
+ 
+141
+.gallery{
+142
+display:grid;
+143
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+144
+gap:20px;
+145
+}
+146
+ 
+147
+.gallery img{
+148
+width:100%;
+149
+height:250px;
+150
+object-fit:cover;
+151
+border-radius:20px;
+152
+transition:0.3s;
+153
+}
+154
+ 
+155
+.gallery img:hover{
+156
+transform:scale(1.03);
+157
+}
+158
+ 
+159
+.about{
+160
+background:white;
+161
+border-radius:20px;
+162
+padding:40px;
+163
+box-shadow:0 5px 20px rgba(0,0,0,0.1);
+164
+}
+165
+ 
+166
+.contact{
+167
+background:#111;
+168
+color:white;
+169
+border-radius:20px;
+170
+padding:40px;
+171
+text-align:center;
+172
+}
+173
+ 
+174
+footer{
+175
+background:#000;
+176
+color:white;
+177
+padding:20px;
+178
+text-align:center;
+179
+}
+180
+ 
+181
+@media(max-width:768px){
+182
+ 
+183
+.hero h1{
+184
+font-size:2.5rem;
+185
+}
+186
+ 
+187
+.menu{
+188
+display:none;
+189
+}
+190
+ 
+191
+}
+192
+ 
+193
+</style>
+194
+</head>
+195
+ 
+196
+<body>
+197
+ 
+198
+<header>
+199
+<nav>
+200
+ 
+201
+<div class="logo">
+202
+🚒 ASP Auffay
+203
+</div>
+204
+ 
+205
+<div class="menu">
+206
+<avenementsÉvénements</a>
+207
+<a hrefeGalerie</a>
+208
+<a href="#amicale">L'Amicale</aontact</a>
+209
+</div>
+210
+ 
+211
+</nav>
+212
+</header>
+213
+ 
+214
+<section class="hero">
+215
+ 
+216
+<div>
+217
+ 
+218
+<h1>Amicale des Sapeurs-Pompiers d'Auffay</h1>
+219
+ 
+220
+<p>
+221
+Au cœur de la vie locale, de nos événements et de nos actions.
+222
+</p>
+223
+ 
+224
+#evenements
+225
+Découvrir nos événements
+226
+</a>
+227
+ 
+228
+</div>
+229
+ 
+230
+</section>
+231
+ 
+232
+<section id="evenements">
+233
+ 
+234
+<div class="container">
+235
+ 
+236
+<h2>📅 Nos Événements</h2>
+237
+ 
+238
+<div class="cards">
+239
+ 
+240
+<div class="card">
+241
+<h3>Foire à Tout</h3>
+242
+<p>
+243
+Réservez votre emplacement directement en ligne.
+244
+</p>
+245
+</div>
+246
+ 
+247
+<div class="card">
+248
+<h3>Trail des Pompiers</h3>
+249
+<p>
+250
+Parcours 13 km et 25 km, actualités et résultats.
+251
+</p>
+252
+</div>
+253
+ 
+254
+<div class="card">
+255
+<h3>Sainte-Barbe</h3>
+256
+<p>
+257
+Informations sur la cérémonie annuelle.
+258
+</p>
+259
+</div>
+260
+ 
+261
+</div>
+262
+ 
+263
+</div>
+264
+ 
+265
+</section>
+266
+ 
+267
+<section id="galerie">
+268
+ 
+269
+<div class="container">
+270
+ 
+271
+<h2>📸 Galerie Photos</h2>
+272
+ 
+273
+<div class="gallery">
+274
+ 
+275
+https://picsum.photos/500/500?1
+276
+ 
+277
+<img srcpicsum.photos/500/500?2
+278
+ 
+279
+<img srcpicsum.photos/500/500?3
+280
+ 
+281
+<img src="https://picsum0/500?4
+282
+ 
+283
+</div>
+284
+ 
+285
+</div>
+286
+ 
+287
+</section>
+288
+ 
+289
+<section id="amicale">
+290
+ 
+291
+<div class="container">
+292
+ 
+293
+<h2>👨‍🚒 Notre Amicale</h2>
+294
+ 
+295
+<div class="about">
+296
+ 
+297
+<p>
+298
+ 
+299
+L'Amicale des Sapeurs-Pompiers d'Auffay participe activement à la vie locale grâce à l'organisation de manifestations sportives, festives et solidaires.
+300
+ 
+301
+</p>
+302
+ 
+303
+<br>
+304
+ 
+305
+<h3>Bureau</h3>
+306
+ 
+307
+<ul>
+308
+<li>Président : À compléter</li>
+309
+<li>Vice-président : À compléter</li>
+310
+<li>Trésorier : À compléter</li>
+311
+<li>Secrétaire : À compléter</li>
+312
+</ul>
+313
+ 
+314
+</div>
+315
+ 
+316
+</div>
+317
+ 
+318
+</section>
+319
+ 
+320
+<section id="contact">
+321
+ 
+322
+<div class="container">
+323
+ 
+324
+<h2>📞 Contact</h2>
+325
+ 
+326
+<div class="contact">
+327
+ 
+328
+<p>Email : contact@amicale.fr</p>
+329
+ 
+330
+<br>
+331
+ 
+332
+<p>Facebook : À compléter</p>
+333
+ 
+334
+<br>
+335
+ 
+336
+<p>Auffay - Seine-Maritime</p>
+337
+ 
+338
+</div>
+339
+ 
+340
+</div>
+341
+ 
+342
+</section>
+343
+ 
+344
+<footer>
+345
+ 
+346
+© 2026 Amicale des Sapeurs-Pompiers d'Auffay
+347
+ 
+348
+</footer>
+349
+ 
+350
+</body>
+351
 </html>
