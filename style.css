@@ -10,7 +10,9 @@ scroll-behavior:smooth;
 }
 
 body{
-background:#f4f4f4;
+background:#c00000;
+color:white;
+text-align:center;  
 }
 
 header{
