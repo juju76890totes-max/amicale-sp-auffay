@@ -5,6 +5,31 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Administration</title>
+    <table id="tableau">
+    <tr>
+        <th>Nom</th>
+        <th>Prénom</th>
+    </tr>
+</table>
+    <script>
+
+let inscrits = JSON.parse(localStorage.getItem("inscrits")) || [];
+
+let tableau = document.getElementById("tableau");
+
+inscrits.forEach(personne => {
+
+    tableau.innerHTML += `
+        <tr>
+            <td>${personne.nom}</td>
+            <td>${personne.prenom}</td>
+        </tr>
+    `;
+
+});
+
+</script>
+    
 
 <style>
 
